@@ -126,13 +126,15 @@ body{
   height:  300px;
   border-radius: 50%;
   overflow: hidden;
+  display: grid;
+  place-items: center;
   border: 15px solid #444444;
   box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
-profile-photo .img{
-  height: 100%;
+profile-photo img{
   width: 100%;
-  transition: 0.5s;
+  object-fit: fill;
+  border-radius: 50%;
 }
 .FirstElement .profile-photo img:hover{
   transform: scale(1.2);
